@@ -1,0 +1,9 @@
+body {
+  background-color: #f5f7f5;
+}
+#app .login-container .van-nav-bar {
+  background-color: #3296fa;
+}
+#app .login-container .van-nav-bar .van-nav-bar__title {
+  color: #f5f7f5;
+}
