@@ -11,9 +11,31 @@ const routes = [
     component:()=>import('@/views/login')
   },
   {
-    path:'/layout',
+    path:'/',
     name:'layout',
-    component:()=>import('@/views/layout')
+    component:()=>import('@/views/layout'),
+    children:[
+      {
+        path:'home',
+        name:'home',
+        component:()=>import('@/views/home'),
+      },
+      {
+        path:'cricle',
+        name:'cricle',
+        component:()=>import('@/views/cricle'),
+      },
+      {
+        path:'video',
+        name:'video',
+        component:()=>import('@/views/video'),
+      },
+      {
+        path:'my',
+        name:'my',
+        component:()=>import('@/views/my'),
+      }
+    ]
   }
 ]
 
