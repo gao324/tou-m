@@ -34,8 +34,24 @@ const routes = [
         path:'my',
         name:'my',
         component:()=>import('@/views/my'),
-      }
+      },
     ]
+  },
+  {
+    path:'/userp',
+    name:'userp',
+    component:()=>import('@/views/userp')
+  },
+  {
+    path:'/search',
+    name:'search',
+    component:()=>import('@/views/search')
+  },
+  {
+    path:'/article/:articleID',
+    name:'article',
+    component:()=>import('@/components/article/components/article-nav'),
+    props:true
   }
 ]
 

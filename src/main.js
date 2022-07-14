@@ -8,7 +8,7 @@ import Vant from 'vant'
 import 'vant/lib/index.css'
 import 'amfe-flexible'
 import 'postcss-pxtorem'
-
+import '@/util/dayjs'
 Vue.config.productionTip = false
 
 Vue.use(Vant)

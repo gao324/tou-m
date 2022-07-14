@@ -9,7 +9,10 @@
           />
           <span>{{ users.name }}</span>
         </div>
-        <span class="mode">编辑资料</span>
+        <span 
+        class="mode" 
+        @click="a"
+        >编辑资料</span>
       </div>
       <div class="buttom">
         <van-row type="flex" justify="space-around">
@@ -96,6 +99,10 @@ export default {
         this.$toast('请求失败！！')
         console.log(err);
       }
+    },
+    a(){
+      console.log(11);
+      this.$router.push('/userp')
     }
   },
   computed:{
